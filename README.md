@@ -59,14 +59,35 @@
 
 ---
 
-### 🔹 Rules for Healthy Class (`class=buff`)
-
-![Buff Rules](buff_rules_tableau.png)
-
 ### 🔹 Rules for Sick Class (`class=sick`)
 
 ![Sick Rules](sick_rules_tableau.png)
 
+### 🔹 Rules for Healthy Class (`class=buff`)
+
+![Buff Rules](buff_rules_tableau.png)
+
+---
+
+## 🔍 Example Association Rules
+
+- Above are selected high-confidence rules identified by the model:
+
+- **Rule 1:**  
+  `{thal=rev, chestpain=asympt} → class=sick`  
+  *Confidence:* 0.91 | *Support:* 0.23 | *Lift:* 2.00  
+
+- **Rule 2:**  
+  `{exerciseinducedangina=TRUE, chestpain=asympt} → class=sick`  
+  *Confidence:* 0.88 | *Support:* 0.23 | *Lift:* 1.92  
+
+- **Rule 3:**  
+  `{slope=up, numberofvesselscolored=0, thal=norm} → class=buff`  
+  *Confidence:* 0.94 | *Support:* 0.22 | *Lift:* 1.73  
+
+- **Rule 4:**  
+  `{gender=fem, exerciseinducedangina=FALSE, thal=norm} → class=buff`  
+  *Confidence:* 0.92 | *Support:* 0.20 | *Lift:* 1.70  
 ---
 
 ## 💡 Key Insights
